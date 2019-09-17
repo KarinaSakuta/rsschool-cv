@@ -1,12 +1,14 @@
-1. First Name, Last Name (real ones)
-2. Contact Info (add several ways to contact you)
-3. Summary (your goal, wishes, reveal what is important for you, what do you want and why.
-Some kind of self-presentation. In case of lack of experience  Junior Developer sells his/her potential, his/her passion and ability to learn fast. You shouldn't think that everybody is going to teach you when you come to the workplace . Rather being a Junior means always
-learning new things from everywhere etc.).
-4. Skills (e.g. programming languages, frameworks, methodologies, version control, tools etc.)
-5. Code examples (LATEST)
-6. Experience (for a Junior Dev it means all kinds of experience: coding tests, projects from courses,
-freelance projects - wherever they had the opportunity to demonstrate skills they have.
-Also it would be awesome if you add links to source code)
-7. Education (including courses, seminars, lectures, online learning)
-8. English (elaborate on what kind of practice you had, if any, how long it lasted and so on)
+1. Karyna Halavach
+2. Phone: +375 29 139 28 19  
+Email: karina.sakuta17@gmail.com
+3. I'm completely new to programming, but I'm a real quick study. Now my goal is to learn programming every day because I want to be professional front-end developer in future. My second goal is to have a good job. I want to make money doing what I love. I love clean code and hate bugs. I think that I will be able to reach my full potential in epam. I believe in myself, and this is the most important thing.
+4. I have working knowledge of HTML, CSS, JavaScript, Java, MySQL, Adobe Photoshop and Git.
+5. My last work was https://agrpro.ru/
+6. Experience 
+https://www.codecademy.com/users/karina_kotova/achievements
+https://htmlacademy.ru/profile/id840159/achievements
+7. Education
+BSAC(in the past the Highest state college of communication), faculty of pre-university training.
+Online courses and books: htmlacademy.ru, learn.javascript.ru, htmlbook.
+8. English
+I have a good level of English. I have experience of live communication with foreigners. I quickly speak and translate technical texts. Also I participate in language exchange programs with foreigners. This is a very amazing practice for me!
