@@ -1,0 +1,163 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  font-family: 'Montserrat', "Arial", sans-serif;
+}
+
+a {
+  transition: all 0.3s ease-in-out;
+  color: #f2c06b;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  background-color: transparent;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.home-page-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.common-title {
+  position: relative;
+  margin-bottom: 60px;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #555;
+
+  &:after {
+    position: absolute;
+    content: '';
+    background: #555;
+    width: 50px;
+    height: 2px;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.scroll-down {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  height: 10vh;
+  width: 5vh;
+  bottom: 60px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 40px;
+  cursor: pointer;
+  outline: none;
+}
+
+.scroll-down:before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: scroll-down-btn-animation 2s infinite;
+  animation: scroll-down-btn-animation 2s infinite;
+  box-sizing: border-box;
+}
+
+@keyframes scroll-down-btn-animation {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes scroll-down-btn-animation {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
