@@ -1,0 +1,130 @@
+.feedback-slider {
+  position: relative;
+  .slide-info: {
+    flex: 1;
+  }
+
+  .slick-prev {
+    position: absolute;
+    left: -50px;
+    top: 42%;
+    z-index: 999999;
+
+    &:before {
+      position: absolute;
+      content: '';
+      top: 10px;
+      left: 8px;
+      width: 10px;
+      height: 10px;
+      border-top: 2px solid black;
+      border-left: 2px solid black;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .slick-next {
+    position: absolute;
+    right: -50px;
+    top: 42%;
+    z-index: 999999;
+
+    &:before {
+      position: absolute;
+      content: '';
+      top: 10px;
+      left: 13px;
+      width: 10px;
+      height: 10px;
+      border-top: 2px solid black;
+      border-right: 2px solid black;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.dragging {
+    cursor: pointer;
+    cursor: hand;
+  }
+}
+
+.category-slider .slick-track,
+.category-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: block;
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+  .slick-loading & {
+    visibility: hidden;
+  }
+}
+
+.slick-slide {
+  height: 100%;
+  display: none;
+  float: left;
+  min-height: 1px;
+  margin: 0 10px 0;
+
+  [dir="rtl"] & {
+    float: right;
+  }
+
+  img {
+    display: block;
+  }
+
+  &.slick-loading img {
+    display: none;
+  }
+
+  &.dragging img {
+    pointer-events: none;
+  }
+
+  .slick-initialized & {
+    display: block;
+  }
+
+  .slick-loading & {
+    visibility: hidden;
+  }
+
+  .slick-vertical & {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+  }
+}
