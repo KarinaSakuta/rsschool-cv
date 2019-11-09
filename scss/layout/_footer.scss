@@ -1,7 +1,7 @@
-.footer-section {
+.footer {
   padding-top: 40px;
 
-  .get-in-touch {
+  &__get-in-touch {
     position: relative;
     font-family: 'Montserrat', "Arial", sans-serif;
     font-size: 30px;
@@ -19,20 +19,20 @@
     }
   }
 
-  .creating-date {
+  &__creating-date {
     font-size: 20px;
   }
 
-  .container {
+  &__container {
     text-align: center;
   }
 
-  .contacts {
+  &__contacts {
     padding: 30px 0;
     text-align: center;
+  }
 
-    .contacts-icon {
-      padding: 0 5px;
-    }
+  &__contacts-icon {
+    padding: 0 5px;
   }
 }

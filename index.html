@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Resume</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/3.18.1/build/cssnormalize/cssnormalize-min.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -16,53 +16,53 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="home-page">
-          <div class="home-page-wrapper">
-            <div class="home-page-intro">
-              <div class="intro-text">Hi! My name is Karyna Halavach, I'm a -</div>
-              <h1 class="intro-profession">frontend developer</h1>
-              <div class="intro-text">Creating quality FrontEnd products</div>
-              <button type="button" class="scroll-down" id="scroll-down"></button>
+        <div class="header__home-page">
+          <div class="header__home-page-wrapper">
+            <div class="header__home-page-intro">
+              <p class="header__intro-text">Hi! My name is Karyna Halavach, I'm a -</p>
+              <h1 class="header__intro-profession">frontend developer</h1>
+              <p class="header__intro-text">Creating quality FrontEnd products</p>
+              <button type="button" class="header__scroll-down" id="scroll-down"></button>
             </div>
           </div>
         </div>
       </header>
       <main class="main">
         <section class="about-me">
-          <div class="content">
-            <img src="img/1TWOlx99zRs.jpg" alt="myself" width="350" height="467">
-            <div class="text-about-me">
-              <h2>What I'm all about</h2>
-              <p>I'm completely new to programming, but I'm a real quick study. Now my goal is to learn programming every day because I want to be professional front-end developer in future. My second goal is to have a good job. I want to make money doing what I love. I love clean code and hate bugs. I think that I will be able to reach my full potential in epam. I believe in myself, and this is the most important thing.</p>
-              <h2>About my skills</h2>
-              <p>I have working knowledge of HTML, CSS, JavaScript, Java, MySQL, Adobe Photoshop and Git.</p>
-              <h2>Experience </h2>
-              <p>Freelance work. My last project was <a href="https://agrpro.ru/" alt="agropro" target="_blank">Agropro</a></p>
-              <h2>Education</h2>
-              <p>BSAC(in the past the Highest state college of communication), faculty of pre-university training. Online courses and books: htmlacademy.ru, learn.javascript.ru, codecademy, htmlbook.<br>
+          <div class="about-me__content">
+            <img src="img/1TWOlx99zRs.jpg" class="about-me__img" alt="myself" width="350" height="467">
+            <div class="about-me__text-container">
+              <h2 class="about-me__title">What I'm all about</h2>
+              <p class="about-me__text">I'm completely new to programming, but I'm a real quick study. Now my goal is to learn programming every day because I want to be professional front-end developer in future. My second goal is to have a good job. I want to make money doing what I love. I love clean code and hate bugs. I think that I will be able to reach my full potential in epam. I believe in myself, and this is the most important thing.</p>
+              <h2 class="about-me__title">About my skills</h2>
+              <p class="about-me__text">I have working knowledge of HTML, CSS, JavaScript, Java, MySQL, Adobe Photoshop and Git.</p>
+              <h2 class="about-me__title">Experience </h2>
+              <p class="about-me__text">Freelance work. My last project was <a href="https://agrpro.ru/" alt="agropro" target="_blank">Agropro</a></p>
+              <h2 class="about-me__title">Education</h2>
+              <p class="about-me__text">BSAC(in the past the Highest state college of communication), faculty of pre-university training. Online courses and books: htmlacademy.ru, learn.javascript.ru, codecademy, htmlbook.<br>
               <a href="https://www.codecademy.com/users/karina_kotova/achievements" target="_blank">Codecademy achievements</a><br>
               <a href ="https://htmlacademy.ru/profile/id840159/achievements" target="_blank">Htmlacademy achievements</a>
-              <h2>English</h2>
-              <p>I have a good level of English. I have an experience of live communication with foreigners. I quickly speak and translate technical texts. Also I participate in language exchange programs with foreigners. This is a very amazing practice for me!</p>
+              <h2 class="about-me__title">English</h2>
+              <p class="about-me__text">I have a good level of English. I have an experience of live communication with foreigners. I quickly speak and translate technical texts. Also I participate in language exchange programs with foreigners. This is a very amazing practice for me!</p>
             </div>
           </div>
         </section>
         <section class="skills">
-          <div class="content">
-            <div class="skills-text">
-              <img src="img/js.jpg" alt="js" width="200">
-              <h2>JavaScript</h2>
-              <p>Animating pages using JavaScript</p>
+          <div class="skills__content">
+            <div class="skills__container">
+              <img src="img/js.jpg" class="skills__img" alt="js" width="200">
+              <h2 class="skills__title">JavaScript</h2>
+              <p class="skills__text">Animating pages using JavaScript</p>
             </div>
-            <div class="skills-text">
-              <img src="img/htmlcss.jpg" alt="html&css" width="200">
-              <h2>HTML5&CSS3</h2>
+            <div class="skills__container">
+              <img src="img/htmlcss.jpg" class="skills__img" alt="html&css" width="200">
+              <h2 class="skills__title">HTML5&CSS3</h2>
               <p>Semantic and adaptive layout using technologies CSS3</p>
             </div>
-            <div class="skills-text">
-              <img src="img/time.jpg" alt="time" width="200">
-              <h2>Always on time</h2>
-              <p>The implementation of the task is always on time</p>
+            <div class="skills__container">
+              <img src="img/time.jpg" class="skills__img" alt="time" width="200">
+              <h2 class="skills__title">Always on time</h2>
+              <p class="skills__text">The implementation of the task is always on time</p>
             </div>
           </div>
         </section>
@@ -103,23 +103,21 @@
         </section>
       </main>
       <footer class="footer">
-        <section class="footer-section">
-          <div class="container">
-            <span class="get-in-touch">get in touch</span>
-            <div class="contacts">
-              <a href="https://vk.com/id402238450" target="_blank">
-                <img class="contacts-icon" src="img/vk.jpg" alt="vk" width="50">
-              </a>
-              <a href="https://github.com/KarinaSakuta/" target="_blank">
-                <img class="contacts-icon" src="img/git.jpg" alt="git" width="50">
-              </a>
-              <a href="mailto:karina.sakuta17@gmail.com" target="_blank">
-                <img class="contacts-icon" src="img/gm.jpg" alt="gmail" width="50">
-              </a>
-            </div>
-            <span class="creating-date">©2019</span>
+        <div class="footer__container">
+          <span class="footer__get-in-touch">get in touch</span>
+          <div class="footer__contacts">
+            <a href="https://vk.com/id402238450" target="_blank">
+              <img class="footer__contacts-icon" src="img/vk.jpg" alt="vk" width="50">
+            </a>
+            <a href="https://github.com/KarinaSakuta/" target="_blank">
+              <img class="footer__contacts-icon" src="img/git.jpg" alt="git" width="50">
+            </a>
+            <a href="mailto:karina.sakuta17@gmail.com" target="_blank">
+              <img class="footer__contacts-icon" src="img/gm.jpg" alt="gmail" width="50">
+            </a>
           </div>
-        </section>
+          <span class="footer__creating-date">©2019</span>
+        </div>
       </footer>
     </div>
   </body>

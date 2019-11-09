@@ -1,5 +1,5 @@
 .header {
-  .home-page {
+  &__home-page {
     width: 100%;
     height: 100vh;
     background: url("../img/bgglitch.jpg") no-repeat;
@@ -7,7 +7,16 @@
     background-position: center center;
   }
 
-  .home-page-intro {
+  &__home-page-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  &__home-page-intro {
     padding-top: 50vh;
     display: flex;
     color: white;
@@ -15,53 +24,53 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    @include mobile {
+      padding-top: 30vh;
+    }
   }
 
-  .intro-text {
+  &__intro-text {
     padding-bottom: 10px;
     font-size: 30px;
   }
 
-  h1 {
+  &__intro-profession {
     padding-bottom: 10px;
     font-size: 50px;
     font-weight: bold;
-  }
-
-  .intro-profession {
     text-transform: uppercase;
+    @include mobile {
+      font-size: 40px;
+    }
   }
-
-  a {
-    padding-top: 10vh;
-    transition: .5s;
-  }
-
-  span {
-    position: relative;
-    display: block;
-    width: 60px;
-    height: 60px;
-    color: white;
-    border-radius: 50%;
+  
+  &__scroll-down {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: 10vh;
+    width: 5vh;
+    bottom: 60px;
+    background-color: transparent;
     border: 2px solid white;
-    transition: .5s;
-
+    border-radius: 40px;
+    cursor: pointer;
+    outline: none;
     &:before {
       position: absolute;
-      top: 12px;
-      left: 17.3px;
-      width: 20px;
-      height: 20px;
-      transform: rotate(-45deg);
-      border-left: 2px solid white;
-      border-bottom: 2px solid white;
+      top: 10px;
+      left: 50%;
       content: '';
-      transition: .5s;
-    }
-
-    &:hover {
-      transform: scale(1.1);
+      width: 6px;
+      height: 6px;
+      margin-left: -3px;
+      background-color: #fff;
+      border-radius: 100%;
+      -webkit-animation: scroll-down-btn-animation 2s infinite;
+      animation: scroll-down-btn-animation 2s infinite;
+      box-sizing: border-box;
     }
   }
 }

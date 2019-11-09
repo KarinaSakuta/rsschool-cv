@@ -104,6 +104,10 @@
 
   img {
     display: block;
+    @include mobile {
+      width: 71px;
+      height: 64px;
+    }
   }
 
   &.slick-loading img {

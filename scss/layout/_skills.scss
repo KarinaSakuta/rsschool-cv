@@ -1,0 +1,32 @@
+.skills {
+  padding: 0 12vw;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  &__content {
+    display: flex;
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    margin-bottom: 2vh;
+  }
+
+  &__container {
+    margin: 0 10px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  &__title {
+    padding-top: 4vh;
+    padding-bottom: 2vh;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  &__text {
+    font-size: 20px;
+  }
+}
